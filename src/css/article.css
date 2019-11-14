@@ -1,0 +1,20 @@
+#main-heading {
+    margin: auto;
+}
+
+#article-container{
+    padding: 15px;
+}
+
+.column.article {
+    margin: 20px;
+    width: 15%;
+}
+
+.park-name {
+    font-size: 24px;
+}
+
+.park-location {
+    font-size: 18px;
+}
