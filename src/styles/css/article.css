@@ -1,0 +1,39 @@
+#banner{
+    position: relative;
+}
+
+#heading-container{
+    position: absolute;
+    bottom: 65%;
+    left: 3rem;
+}
+
+#main-heading {
+    margin: auto;
+    font-size: 3.5rem;
+}
+
+#article-container{
+    padding: 15px;
+}
+
+.column.article {
+    margin: 20px;
+    width: 15%;
+}
+
+.park-name {
+    font-size: 24px;
+}
+
+.park-location {
+    font-size: 18px;
+}
+
+.visited-park {
+    border: 1px solid green;
+}
+
+.not-visited {
+    border: 1px dashed red;
+}

@@ -1,5 +1,16 @@
+#banner{
+    position: relative;
+}
+
+#heading-container{
+    position: absolute;
+    bottom: 65%;
+    left: 3rem;
+}
+
 #main-heading {
     margin: auto;
+    font-size: 3.5rem;
 }
 
 #article-container{

@@ -1,21 +1,12 @@
 const gulp = require('gulp');
-const browserSync = require('browser-sync').create();
 
-gulp.task('browser-sync', function() {
-    
+gulp.task('sass', function() {
+    console.log(sass)
 });
 
 function defaultTask(cb) {
-    // place code for your default task here
-    browserSync.init({
-        server: {
-            baseDir: "src/"
-        }
-    });
-    browserSync.reload();
+    sass();
     cb();
-}
-
-gulp.task('js', () => {})
-
-exports.default = defaultTask
+  }
+  
+  exports.default = defaultTask

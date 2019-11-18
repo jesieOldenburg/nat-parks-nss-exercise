@@ -1,8 +1,9 @@
-console.log('index.js is here');
+// console.log('index.js is here');
 const articleContainer = document.querySelector("#article-container")
-console.log('articleContainer', articleContainer)
+// console.log('articleContainer', articleContainer)
 
 function createArticle (park) {
+    
     return /*html*/ `
             <div class="column article">
                 <article class="park-article">
@@ -25,9 +26,23 @@ function getData(url) {
         parsedData.forEach( park => {
             // console.log(park.name, park.state)
             const populatedHTML = createArticle(park)
-            console.log(populatedHTML)
+            // console.log(populatedHTML)
             appendToDOM(populatedHTML)
+            updateStyles(park);
         });
     })
 }
 getData(`http://localhost:8088/parks`)
+
+updateStyles = (park) => {
+    console.log('called update styles')
+    const parkTitle = document.getElementsByClassName('park-name')
+
+    if (park.visited == true) {
+        console.log(true)
+        parkTitle.classList.toggle('visited-park')
+    } else {
+        console.log(false)
+        parkTitle.className = 'not-visited'
+    }
+}
