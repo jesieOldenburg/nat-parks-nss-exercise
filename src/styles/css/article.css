@@ -1,0 +1,53 @@
+#banner{
+    position: relative;
+}
+
+#heading-container{
+    position: absolute;
+    bottom: 65%;
+    left: 3rem;
+}
+
+#main-heading {
+    margin: auto;
+    font-size: 3.5rem;
+}
+
+#article-container{
+    padding: 15px;
+}
+
+.column.article {
+    margin: 10px;
+    height: 20rem;
+}
+
+.park-article {
+    border-bottom: 3px solid mediumseagreen;
+    padding-bottom: 25px;
+    width: 40%;
+}
+
+.park-name {
+    text-align: center;
+    display: block;
+    font-size: 24px;
+    margin: 15px 5px 50px 5px;
+    padding: 15px;
+}
+
+.park-location {
+    font-size: 28px;
+    margin: auto;
+    text-align: center;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+}
+
+.visited-park {
+    border: 1px solid green;
+}
+
+.not-visited {
+    border: 1px dashed red;
+}
